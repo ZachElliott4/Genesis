@@ -27,8 +27,9 @@ const styles = StyleSheet.create({
     title:{
         color: 'white',
         bottom: 300,
-        fontSize: 28,
-        fontFamily: 'Apple SD Gothic Neo'
+        fontSize: 30,
+        fontFamily: 'Apple SD Gothic Neo',
+        fontWeight: 'bold',
     },
     logo:{
         width: 150,
@@ -36,19 +37,30 @@ const styles = StyleSheet.create({
         bottom: 300,
     },
     loginButton:{
-        width:'100%',
-        height:80,
-        backgroundColor:"#595959",
+        width:'70%',
+        height:70,
+        backgroundColor:"#641220",
+        bottom: 150,
+        margin: 10,
+        borderRadius: 25,
+        borderWidth: 1,
+        borderColor: "#fff",
     },
     registerButton:{
-        width:'100%',
-        height:80,
-        backgroundColor:"#7f7f7f",
+        width:'70%',
+        height:70,
+        backgroundColor:"#641220",
+        bottom: 150,
+        borderRadius: 25,
+        borderWidth: 1,
+        borderColor: "#fff",
+
     },
     text:{
         color: 'white',
-        fontSize: 24,
-        fontFamily: 'Apple SD Gothic Neo'
+        fontSize: 26,
+        fontFamily: 'Apple SD Gothic Neo',
+        fontWeight: 'bold',
     },
     textContainer:{
         alignItems: 'center',
