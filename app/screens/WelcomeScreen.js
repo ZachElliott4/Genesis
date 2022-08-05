@@ -1,4 +1,11 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { 
+    StyleSheet, 
+    Text, 
+    View, 
+    Image, 
+    TouchableHighlight
+} from 'react-native';
+
 
 
 export default function WelcomeScreen() {
@@ -6,12 +13,18 @@ export default function WelcomeScreen() {
     <View style={styles.container}>
         <Image style={styles.logo} source={require('../assets/trident.png')} />
         <Text style={styles.title}>GENESIS</Text>
-        <View style={[styles.loginButton, styles.textContainer]}>
+        <TouchableHighlight 
+        underlayColor="#A71E34"
+        onPress={() => console.log("New Profile Click")}
+        style={[styles.loginButton, styles.textContainer]}>
             <Text style={styles.text}>New Profile</Text>
-        </View>
-        <View style={[styles.registerButton, styles.textContainer]}>
+        </TouchableHighlight>
+        <TouchableHighlight 
+        underlayColor="#A71E34"
+        onPress={() => console.log("Existing User Click")}
+        style={[styles.registerButton, styles.textContainer]}>
             <Text style={styles.text}>Existing User</Text>
-        </View>
+        </TouchableHighlight>
     </View>
   );
 }
