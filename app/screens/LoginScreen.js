@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Image, TextInput } from "react-native";
 
-export default function WelcomeScreen() {
-  return (
+export const LoginScreen = () => {
+  return(
     <View style={styles.container}>
       <Image style={styles.logo} source={require("../assets/trident.png")} />
       <Text style={styles.title}>GENESIS</Text>

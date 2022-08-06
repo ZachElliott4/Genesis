@@ -3,13 +3,15 @@ import {
     Text, 
     View, 
     Image, 
-    TouchableHighlight
+    TouchableHighlight,
+
 } from 'react-native';
 
 
 
-export default function WelcomeScreen() {
-  return (
+export const WelcomeScreen = ({ navigation }) => {
+    return(
+
     <View style={styles.container}>
         <Image style={styles.logo} source={require('../assets/trident.png')} />
         <Text style={styles.title}>GENESIS</Text>
@@ -21,13 +23,14 @@ export default function WelcomeScreen() {
         </TouchableHighlight>
         <TouchableHighlight 
         underlayColor="#A71E34"
-        onPress={() => console.log("Existing User Click")}
+        onPress={() => navigation.navigate("Login")}
         style={[styles.registerButton, styles.textContainer]}>
             <Text style={styles.text}>Existing User</Text>
         </TouchableHighlight>
     </View>
-  );
+    );
 }
+
 
 const styles = StyleSheet.create({
     container: {
@@ -78,6 +81,5 @@ const styles = StyleSheet.create({
     textContainer:{
         alignItems: 'center',
         justifyContent: 'center',
-    }
-
+    },
 });
